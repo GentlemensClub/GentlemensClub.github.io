@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" contents="width=device-width", initial-scales=1.0">
+        <title>Dizon SA3</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            /*       HEADER        */
+            body { 
+            margin: 0;
+             font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .header {
+            overflow: hidden;
+            background-color: #1f1f1f;
+            padding: 20px 10px;
+            }
+
+            .header a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px; 
+            line-height: 25px;
+            border-radius: 4px;
+            }
+
+            .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+            }
+
+            .header a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+
+            .header a.active {
+            background-color: #009e64;
+            color: white;
+            }
+
+            .header-right {
+            float: right;
+            }
+
+            @media screen and (max-width: 500px) {
+             .header a {
+              float: none;
+             display: block;
+             text-align: left;
+             }
+  
+            .header-right {
+                float: none;
+            }
+            }
+
+            .home{
+                background-color: rgb(175, 175, 175);
+                color: rgb(255, 255, 255);
+                padding: 100px 0px;
+                text-align: center;
+            }
+
+            .home h1{
+                color: rgb(255, 255, 255);
+                font-size: 75px;
+            }
+
+            .home p{
+                padding: -25px 0px;
+            }
+
+        /*       PRICING TABLE         */
+            .columns {
+              float: left;
+              width: 33.3%;
+              padding: 50px 35px;
+            }
+            
+            .price {
+              list-style-type: none;
+              border: 1px solid rgb(255, 255, 255);
+              margin: 0;
+              padding: 0;
+              -webkit-transition: 0.3s;
+              transition: 0.3s;
+            }
+            
+            .button:hover {
+              box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+            }
+            
+            .price .header {
+              background-color: rgb(46, 46, 46);
+              color: white;
+              font-size: 25px;
+            }
+            
+            .price li {
+              border-bottom: 5px solid rgb(255, 255, 255);
+              padding: 25px;
+              text-align: center;
+              background-color: rgb(182, 182, 182);
+              font-family:verdana;
+            }
+
+            .price .grey {
+              background-color: #eee;
+              font-size: 20px;
+            }
+            
+            .element{
+                color:white;
+                font-family:Courier;
+            }
+
+            .button {
+              background-color: #009e64;
+              border: none;
+              color: white;
+              padding: 10px 25px;
+              text-align: center;
+              text-decoration: none;
+              font-size: 18px;
+            }
+            @media only screen and (max-width: 600px) {
+              .columns {
+                width: 100%;
+              }
+            }
+        /*       FOOTER        */
+            .footer {
+            overflow: hidden;
+            background-color: #1f1f1f;
+            padding: 20px 10px;
+            color: white;
+            text-align: center;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="header">
+            <a href="#default" class="logo">𝔗𝔥𝔢 𝔊𝔢𝔫𝔱𝔩𝔢𝔪𝔢𝔫'𝔰 ℭ𝔩𝔲𝔟</a>
+            <div class="header-right">
+              <a class="active" href="#home">Home</a>
+            </div>
+          </div>
+          
+          <div class="home">
+            <h1>𝔗𝔥𝔢 𝔭𝔯𝔬𝔭𝔢𝔯 𝔧𝔬𝔲𝔯𝔫𝔢𝔶 𝔱𝔬 𝔪𝔞𝔫𝔩𝔦𝔫𝔢𝔰𝔰</h1>
+            <p>An appropriate way to kickstart a man's journey to make him a proper 𝔊𝔢𝔫𝔱𝔩𝔢𝔪𝔢𝔫. The Gentlemen's club aims to refine<br>
+             any ordinary simpleton and turn them into the optimum male with our online sources and lessons. Our subscriptions offer<br>
+             monthly, yearly, and lifetime subscriptions! Gain access to our several online sources and online lessons with just<br>
+             a click of a button. From fine dining, to proper english, and even to fashion, The Gentlemen's Club has it all!<br>
+             Our team of tutors are all ready to teach you the ways of chivalry, now what are you waiting for? Onwards to greatness!<br>
+            </p>
+          </div>
+
+
+
+        <div class="columns">
+            <ul class="price">
+              <li class="header">Standard Membership</li>
+              <li class="element">1-month subscription</li>
+              <li class="element">Access to online sources</li>
+              <li class="element">Access to online lessons</li>
+              <li class="grey"><a href="#" class="button">$1.99</a></li>
+            </ul>
+          </div>
+          
+          <div class="columns">
+            <ul class="price">
+              <li class="header">Deluxe Membership</li>
+              <li class="element">1-year subscription</li>
+              <li class="element">Access to previous perks</li>
+              <li class="element">Online tutoring</li>
+              <li class="grey"><a href="#" class="button">$9.99</a></li>
+            </ul>
+          </div>
+          
+          <div class="columns">
+            <ul class="price">
+              <li class="header"style="background-color:#04AA6D">Gentlemen's Membership</li>
+              <li class="element">Lifetime membership</li>
+              <li class="element">Access to previous perks</li>
+              <li class="element">Realtime online 𝔊𝔢𝔫𝔱𝔩𝔢𝔪𝔢𝔫'𝔰 training</li>
+              <li class="grey"><a href="#" class="button">$24.99</a></li>
+            </ul>
+          </div>
+
+          <div class="footer">
+            <p>Text us your feedback at #0915131243</p>
+          </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
